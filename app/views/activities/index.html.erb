@@ -14,8 +14,8 @@
   <tbody>
     <% @activities.each do |activity| %>
       <tr>
-        <td><%= activity.user_id %></td>
-        <td><%= activity.goal_id %></td>
+        <td><%= activity.goal.user.email %></td>
+        <td><%= activity.goal.name %></td>
         <td><%= activity.name %></td>
         <td><%= activity.start_date %></td>
         <td><%= link_to 'Show', activity %></td>
