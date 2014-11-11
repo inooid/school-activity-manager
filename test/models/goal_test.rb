@@ -2,11 +2,12 @@
 #
 # Table name: goals
 #
-#  id         :integer          not null, primary key
-#  name       :string(255)
-#  user_id    :integer
-#  created_at :datetime
-#  updated_at :datetime
+#  id            :integer          not null, primary key
+#  name          :string(255)
+#  user_id       :integer
+#  created_at    :datetime
+#  updated_at    :datetime
+#  competence_id :integer
 #
 
 require 'test_helper'
