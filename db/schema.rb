@@ -21,10 +21,10 @@ ActiveRecord::Schema.define(version: 20141111160731) do
     t.datetime "start_date"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "user_id"
+    t.integer  "goal_id"
   end
 
-  add_index "activities", ["user_id"], name: "index_activities_on_user_id", using: :btree
+  add_index "activities", ["goal_id"], name: "index_activities_on_goal_id", using: :btree
 
   create_table "goals", force: true do |t|
     t.string   "name"
