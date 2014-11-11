@@ -1,25 +1,19 @@
 # == Schema Information
 #
-# Table name: activities
+# Table name: competences
 #
 #  id         :integer          not null, primary key
 #  name       :string(255)
-#  start_date :datetime
 #  created_at :datetime
 #  updated_at :datetime
-#  goal_id    :integer
 #
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  user_id: 1
-  goal_id: 1
   name: MyString
-  start_date: 2014-11-11 11:38:17
+  goal: 
 
 two:
-  user_id: 1
-  goal_id: 1
   name: MyString
-  start_date: 2014-11-11 11:38:17
+  goal: 

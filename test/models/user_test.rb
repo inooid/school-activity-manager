@@ -1,18 +1,16 @@
 # == Schema Information
 #
-# Table name: activities
+# Table name: users
 #
 #  id         :integer          not null, primary key
-#  name       :string(255)
-#  start_date :datetime
+#  email      :string(255)
 #  created_at :datetime
 #  updated_at :datetime
-#  goal_id    :integer
 #
 
 require 'test_helper'
 
-class ActivityTest < ActiveSupport::TestCase
+class UserTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
