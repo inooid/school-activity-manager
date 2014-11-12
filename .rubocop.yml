@@ -1,0 +1,13 @@
+AllCops:
+  Excludes:
+    - db/**
+    - config/**
+
+LineLength:
+  Max: 100
+
+Documentation:
+  Enabled: false
+
+Encoding:
+  Enabled: false
