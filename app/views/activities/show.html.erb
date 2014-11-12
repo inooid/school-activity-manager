@@ -2,7 +2,7 @@
 
 <p>
   <strong>User:</strong>
-  <%= @activity..goal.user.email %>
+  <%= @activity.goal.user.email %>
 </p>
 
 <p>
@@ -11,8 +11,13 @@
 </p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>Activity:</strong>
   <%= @activity.name %>
+</p>
+
+<p>
+  <strong>Competence:</strong>
+  <%= @activity.goal.competence.name %>
 </p>
 
 <p>

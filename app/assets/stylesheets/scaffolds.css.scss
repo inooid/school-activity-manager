@@ -12,6 +12,20 @@ p, ol, ul, td {
   line-height: 18px;
 }
 
+table {
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 5px 10px;
+  border: 1px solid #e5e5e5;
+}
+
+tbody > tr:nth-child(odd) {
+  background-color: #fafafa;
+}
+
 pre {
   background-color: #eee;
   padding: 10px;
