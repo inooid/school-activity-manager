@@ -1,0 +1,23 @@
+// ** Usage **
+//
+//  .book-gallery
+//    margin: 20px
+//
+//    @include at-least($gamma)
+//      margin: 40px
+
+
+$alpha: 320px
+$beta: 500px
+$gamma: 600px
+$delta: 992px
+$epsilon: 1200px
+$zeta: 1500px
+
+@mixin at-least($width)
+  @media all and (min-width: $width)
+    @content
+
+@mixin between($min-width, $max-width)
+  @media all and (min-width: $min-width) and (max-width: $max-width - 1)
+    @content

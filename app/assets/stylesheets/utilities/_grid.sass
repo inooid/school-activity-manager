@@ -1,0 +1,67 @@
+// ** Usage **
+//
+// <div class='g-row'>
+//   <div class='g-1-2 g-gamma-3-4 g-zeta-2-3'>
+//     ...content...
+//   </div>
+// </div>
+
+
+// Variables
+$max-cols: 6
+$gutter-width: 1em
+
+// Row
+.g-row
+  @include clearfix
+
+// Each column
+[class^='g-'],
+[class*='g-']
+  float: left
+  padding: $gutter-width
+  width: 100%
+
+// Default value for $max-cols
+// You can change it if you need more or less cols
+@mixin col($col, $max-cols: 12)
+  width: (100% / $max-cols) * $col
+
+// Generate grid
+@mixin grid($media: default)
+  @for $sum from 1 through $max-cols
+    @for $i from 1 through $sum
+      @if $media == default
+        .g-#{$i}-#{$sum}
+          @include col($i, $sum)
+      @else
+        .g-#{$media}-#{$i}-#{$sum}
+          @include col($i, $sum)
+
+
+// Default grid
+@include grid()
+
+// Grid for "Alpha"
+@include at-least($alpha)
+  @include grid(alpha)
+
+// Grid for "Beta"
+@include at-least($beta)
+  @include grid(beta)
+
+// Grid for "Gamma"
+@include at-least($gamma)
+  @include grid(gamma)
+
+// Grid for "Delta"
+@include at-least($delta)
+  @include grid(delta)
+
+// Grid for "Epsilon"
+@include at-least($epsilon)
+  @include grid(epsilon)
+
+// Grid for "Zeta"
+@include at-least($zeta)
+  @include grid(zeta)
