@@ -40,5 +40,7 @@ gem 'annotate', '~> 2.6.5'
 # gem 'capistrano-rails', group: :development
 
 # Use debugger
-# gem 'debugger', group: [:development, :test]
+gem 'byebug', group: [:development, :test]
 
+gem 'rubocop', group: :development
+gem 'quiet_assets', group: :development
