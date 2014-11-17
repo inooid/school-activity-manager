@@ -10,8 +10,7 @@ class MarkdownService
   def renderer
     render_options = {
       filter_html: true,
-      hard_wrap: true,
-      link_attributes: { rel: 'nofollow' }
+      hard_wrap: true
     }
     Redcarpet::Render::HTML.new(render_options)
   end
