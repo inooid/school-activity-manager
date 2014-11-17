@@ -4,7 +4,7 @@ class ActivitiesController < ApplicationController
   # GET /activities
   # GET /activities.json
   def index
-    @activities = Activity.includes(goal: [:user, :competence])
+    @activities = Activity.all
   end
 
   # GET /activities/1
@@ -70,6 +70,6 @@ class ActivitiesController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def activity_params
-    params.require(:activity).permit(:user_id, :goal_id, :name, :start_date)
+    params.require(:activity).permit(:user_id, :name, :start_date)
   end
 end

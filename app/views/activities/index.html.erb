@@ -3,6 +3,7 @@
 <table>
   <thead>
     <tr>
+      <th>#</th>
       <th>User</th>
       <th>Goal</th>
       <th>Activity</th>
@@ -15,6 +16,7 @@
   <tbody>
     <% @activities.each do |activity| %>
       <tr>
+        <td><%= activity.id %></td>
         <td><%= activity.goal.user.email %></td>
         <td><%= activity.goal.name %></td>
         <td><%= activity.name %></td>

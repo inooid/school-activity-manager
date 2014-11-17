@@ -7,9 +7,7 @@
 #  start_date :datetime
 #  created_at :datetime
 #  updated_at :datetime
-#  goal_id    :integer
 #
 
 class Activity < ActiveRecord::Base
-  belongs_to :goal
 end

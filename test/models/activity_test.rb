@@ -7,7 +7,6 @@
 #  start_date :datetime
 #  created_at :datetime
 #  updated_at :datetime
-#  goal_id    :integer
 #
 
 require 'test_helper'
