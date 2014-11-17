@@ -4,4 +4,4 @@ $ ->
   $('.js-newActivity').click (e) ->
     e.preventDefault()
     $activity.show()
-    $(@).hide()
+    $(this).hide()
