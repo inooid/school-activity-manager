@@ -11,23 +11,15 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :user_id %><br>
-    <%= f.number_field :user_id %>
-  </div>
-  <div class="field">
-    <%= f.label :goal_id %><br>
-    <%= f.number_field :goal_id %>
-  </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :start_date %><br>
     <%= f.datetime_select :start_date %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="form-group">
+    <%= f.submit 'CREATE', class: 'btn' %>
   </div>
 <% end %>
