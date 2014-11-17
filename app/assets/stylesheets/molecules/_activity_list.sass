@@ -1,13 +1,13 @@
 .activity-list
   list-style: none
 
-  li
-    @include clearfix
-    background-color: #fff
-    border: 1px solid #E3E3E3
-    border-radius: 5px
-    padding: 15px
-    position: relative
+.activity-list--item
+  @include clearfix
+  background-color: #fff
+  border: 1px solid #E3E3E3
+  border-radius: 5px
+  padding: 15px
+  position: relative
 
-    & + li
-      margin-top: 10px
+  & + .activity-list--item
+    margin-top: 10px
