@@ -10,7 +10,7 @@
 <ul class="activity-list">
   <% @activities.each do |activity| %>
   <li>
-    <p class="activity-list--name"><%= activity.name %></p>
+    <div class="activity-list--name"><%= markdown activity.name %></div>
     <small class="activity-list--date"><%= activity.start_date %></small>
     <span style="position:absolute;top:15px;right:15px;"><%= link_to 'delete', activity, method: :delete, data: { confirm: 'Are you sure?' } %></span>
   </li>
