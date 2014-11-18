@@ -46,3 +46,4 @@ gem 'rubocop', group: :development
 gem 'quiet_assets', group: :development
 gem 'bourbon'
 gem 'redcarpet'
+gem 'rails-timeago', '~> 2.0'

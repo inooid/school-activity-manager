@@ -14,8 +14,15 @@
   <% @activities.each do |activity| %>
   <div class="activity-list--item">
     <div class="activity-list--name"><%= markdown activity.name %></div>
-    <small class="activity-list--date"><%= time_ago_in_words activity.start_date %></small>
-    <span style="position:absolute;top:15px;right:15px;"><%= link_to 'delete', activity, method: :delete, data: { confirm: 'Are you sure?' } %></span>
+    <small class="activity-list--date">
+      <%= timeago_tag activity.start_date, :nojs => true, :limit => 1.weeks.ago %>
+    </small>
+    <span style="position:absolute;top:15px;right:15px;">
+      <%= link_to 'delete', activity, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </span>
   </div>
   <% end %>
 </div>
+
+
+
