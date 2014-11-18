@@ -15,6 +15,10 @@
     <%= f.text_area :name, placeholder: 'Enter activity here' %>
   </div>
   <div class="form-group">
+    <%= f.label :start_date %><br>
+    <%= f.text_field :start_date %>
+  </div>
+  <div class="form-group">
     <%= f.submit 'CREATE', class: 'btn' %>
   </div>
 <% end %>

@@ -10,11 +10,4 @@
 #
 
 class Activity < ActiveRecord::Base
-  before_create :set_start_date
-
-  private
-
-  def set_start_date
-    self.start_date = DateTime.now
-  end
 end
