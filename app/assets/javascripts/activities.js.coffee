@@ -2,6 +2,8 @@ $ ->
   $activity = $('.new-activity')
 
   $('.js-newActivity').click (e) ->
+    $this = $(this)
     e.preventDefault()
-    $activity.show()
-    $(this).hide()
+    $activity.toggle()
+    $this.toggleClass('btn-x').find('span').toggleClass('active')
+
