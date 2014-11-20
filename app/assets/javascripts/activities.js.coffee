@@ -5,7 +5,7 @@ currenttime = ->
   d = date.getDate()
   h = date.getHours()
   mm = date.getMinutes()
-  "#{y}/#{m}/#{d} #{h}:#{mm}"
+  "#{y}-#{m}-#{d} #{h}:#{mm}"
 
 $ ->
   $activity = $('.new-activity')

@@ -162,7 +162,7 @@ nl:
     submit:
       create: ! '%{model} toevoegen'
       submit: ! '%{model} opslaan'
-      update: ! '%{model} bewaren'
+      update: ! '%{model} bewerken'
   number:
     currency:
       format:

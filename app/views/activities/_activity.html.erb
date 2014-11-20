@@ -4,6 +4,7 @@
     <%= timeago_tag activity.start_date, :nojs => true, :limit => 1.days.ago %>
   </small>
   <span style="position:absolute;top:15px;right:15px;">
-    <%= link_to 'delete', activity, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <%= link_to 'edit', edit_activity_path(activity) %> |
+    <%= link_to 'X', activity, method: :delete, data: { confirm: 'Are you sure?' } %>
   </span>
 </div>
