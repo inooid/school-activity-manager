@@ -1,16 +1,4 @@
-<p id="notice"><%= notice %></p>
-
-
-
-<p>
-  <strong>Activity:</strong>
-  <%= @activity.name %>
-</p>
-
-<p>
-  <strong>Start date:</strong>
-  <%= @activity.start_date %>
-</p>
+<%= render @activity%>
 
 <%= link_to 'Edit', edit_activity_path(@activity) %> |
 <%= link_to 'Back', activities_path %>
