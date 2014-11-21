@@ -3,14 +3,16 @@ class MarkdownService
     @markdown = Redcarpet::Markdown.new(
       renderer,
       fenced_code_blocks: true,
-      autolink: true
+      autolink: true,
+      link_attributes: { target: '_blank' }
     )
   end
 
   def renderer
     render_options = {
       filter_html: true,
-      hard_wrap: true
+      hard_wrap: true,
+      link_attributes: { target: '_blank' }
     }
     Redcarpet::Render::HTML.new(render_options)
   end
