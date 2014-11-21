@@ -1,11 +1,14 @@
+leading = (time) ->
+  if time < 10 then "0#{time}" else time
+
 currenttime = ->
   date = new Date
-  y = date.getFullYear()
-  m = date.getMonth() + 1
-  d = date.getDate()
-  h = date.getHours()
-  mm = date.getMinutes()
-  "#{y}-#{m}-#{d} #{h}:#{mm}"
+  Y = date.getFullYear()
+  m = leading date.getMonth() + 1
+  d = leading date.getDate()
+  H = leading date.getHours()
+  M = leading date.getMinutes()
+  "#{H}:#{M} #{d}-#{m}-#{Y}"
 
 $ ->
   $activity = $('.new-activity')
