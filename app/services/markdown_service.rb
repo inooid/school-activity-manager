@@ -3,8 +3,7 @@ class MarkdownService
     @markdown = Redcarpet::Markdown.new(
       renderer,
       fenced_code_blocks: true,
-      autolink: true,
-      link_attributes: { target: '_blank' }
+      autolink: true
     )
   end
 
